@@ -1,0 +1,277 @@
+/*==========  Desktop First Method  ==========*/
+/* !!!!!!!!! */
+/* I must use nested (body), else the browsers ignors style.
+I use BODY, so that it does not tie to the parent */
+@media only screen and (max-width : 1200px) {
+	/*  menu */
+	body .menu__li{
+		padding-left: 30px
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+/*  logo*/
+	body .logo{
+		padding: 24px 0 65px 8px;
+	}
+	/*  main-form */
+	body .main-form{
+		display: none;
+	}
+/* for  couriers-customers*/
+/* For the correct layout of the blocks, I tried the bootstrap, but it does not work correctly*/
+	body .for-repl-bl{
+	 	display: flex;
+		flex-direction: column;
+	 }
+	body .ord1{
+		order: 1;
+	}
+	 body .ord2{
+		order: 2;
+	 }
+
+/*  .t-customers */
+	body .t-customers{
+		margin: 12px auto;
+	}
+	body .table-couriers{
+		margin: 12px auto;
+	}
+/*  menu */
+	body .hidd-mob-head{
+		display: block;
+	}
+	body .hidd_authoriz{
+		display: block;
+		float: right;
+		margin: 16px 
+	}
+/*  hidd-menu (<nav class="menu">)*/
+	body .menu{
+		display: none;
+		height: 20px;
+	}
+	body .hidd-menu{
+		display: block;
+		padding: 10px;
+	}
+/* SECTION couriers and customers*/
+	body .place-order ,body .place-order-two{
+		margin: 0 auto;
+	}
+	.arrow, .arrow2, .arrow-two, .arrow2-two {
+		display: none;
+	}
+	body .sentence , body .sentence-two {
+		margin: 0 auto;
+	}
+	body .select-cour, body .select-cour-two  {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+	body .ser-for-custom__text{
+		margin-top: 25px;
+	}
+/* section class="cour-wait" */
+	body .steps-cust__st1 ,.steps-cust__st2 ,.steps-cust__st3 ,.steps-cust__st4 , .steps-cust__st5{
+		margin: 10px 0px;
+	}
+	body .list-serv1__link, body .list-serv2__link, body .list-serv3__link, body .list-serv4__link, body  .list-serv5__link{
+		margin: 2px auto;
+		display: table;
+	}
+	body  .your-assis__text{
+		margin-top: 3px;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+/*  logo-authorization */
+	.logo-authorization {
+    	height: 60px;
+	}
+/*  logo */
+	body .logo{
+		padding: 25px 0px 0px 9px;
+		min-height: 50px;
+	}
+	body .logo__name{
+		font-size: 18px;
+		font-weight: 900;
+	}
+	body .logo__img{
+		width: 32px;
+		height: 27px;
+		margin-top: -12px;
+	}
+	body .logo__about{
+		display: none
+	}
+/* the END logo */
+/* description-serv */
+	body .description-serv{
+		margin-left: 0px;
+		max-height: 120px;
+	}
+	 body .reg-app{
+		padding-bottom: 10px; 
+	 }
+	  body .reg-app{
+		padding-bottom: 10px; 
+	 }
+/*  footer  */
+	 	body .social{
+
+		margin-top: 49px;
+		text-align: center;
+		float: none;
+		margin-right: 0px;
+
+	}
+}
+@media only screen and (max-width : 600px){
+/*  section (class="couriers-customers)  */
+	body .description-serv__caption{
+		font-size: 30px;
+	}
+
+/*  footer  */
+	body  .social{
+
+		margin-right: 20px;
+
+	}
+
+	body .foot-list2, body .foot-list1{
+
+		padding-left: 20px;
+
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	body .hidd-mob-head__text{
+		font-size: 12px;
+		margin-top: 3px;
+	}
+/*  logo */
+	body .logo__name{
+		font-size: 11px;
+	}
+/*  authoriz__button */
+	body .hidd_authoriz__button{
+		width: 83px;
+		height: 24px;
+		padding: 2px 19px;
+	}
+	 body .work-safely_link{
+		font-size: 14px;
+	 }
+	 body .work-safely__text{
+		margin: 0px;
+		font-size: 22px;
+	 }
+	  body .ser-for-custom__text{
+		font-size: 20px;
+		margin-top: 10px;
+	  }
+	  body .ser-for-courier__text{
+		font-size: 18px;
+		margin-top: 21px;
+	  }
+	 body .your-assis__text{
+		margin-top: -4px;
+		font-size: 17px;
+	 }
+	 body .reg-app{
+		padding-bottom: 10px; 
+	 }
+/*  section (class="couriers-customers)  */
+	body .description-serv__caption{
+		font-size: 21px;
+	}
+	/*  description-serv (class= description-serv__caption)  */
+	body .description-serv{
+		margin-left: 25px;
+    	margin-right: 25px;
+    	padding-right: 0px;
+	}
+	body .description-serv__caption{
+		font-size: 14px;
+	}
+/*  couriers  */
+	body .table-couriers{
+		max-width: 225px;
+	}
+	body  .table-couriers__whom{
+		font-size: 20px;
+	}
+	body  .table-couriers__order{
+		font-size: 18px;
+	}
+	body .table-couriers__line-first {   
+  		  width: 142px;
+   		 height: 2px;
+   		 margin-left: 43px;
+	}		
+	body .table-couriers__schedule	{
+		font-size: 18px;
+	}
+	body .table-couriers__line-second {   
+  		  width: 142px;
+   		 height: 2px;
+   		 margin-left: 43px;
+	}
+	body .table-couriers__payment {
+			font-size: 18px;
+	}
+	 body .table-couriers__become-courier{
+			width: 178px;
+			height: 42px;
+	 }
+/*  customers  */
+	body .t-customers{
+		max-width: 225px;
+	}
+	body  .t-customers__whom{
+		font-size: 20px;
+	}
+	body  .t-customers__order{
+		font-size: 18px;
+	}
+	body .t-customers__line-first {   
+  		  width: 142px;
+   		 height: 2px;
+   		 margin-left: 43px;
+	}		
+	body .t-customers__reg	{
+		font-size: 18px;
+	}
+	body .t-customers__line-second {   
+  		  width: 142px;
+   		 height: 2px;
+   		 margin-left: 43px;
+	}
+	body .t-customers__all {
+			font-size: 18px;
+	}
+	 body .t-customers__bec-cust{
+			width: 178px;
+			height: 42px;
+			font-size: 15px;
+	 }
+
+/*  footer  */
+
+
+	
+	body .social__head{
+
+		font-size: 10px;
+
+
+	}
+
+
+}

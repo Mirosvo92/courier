@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Courier</title>
+		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" href="libs/animate/animate.css" />
+	</head>
+	<body>
+		<!-- loader -->
+		<div class="loader">
+			<div class="loader_inner"></div>
+		</div>
+		<!--header-->
+		<header class="main-head">
+			<!--logo and authorization-->
+			<div class="hidd-mob-head">
+				<h2 class = "hidd-mob-head__text">Поиск курьеров по всей Росии</h2>
+			</div>
+			<div class="logo-authorization">
+				<div class="container">
+					<div class="row">
+						<!--logo and name of the cpmpany -->
+						<div class="col-md-6 col-xs-6 col-sm-6">
+							<div class="logo">
+								<a class="logo_a" href="index.html">
+									<img class="logo__img" src="img/logo.png" alt="logo">
+									<!-- text for logo -->
+									<div class="logo__content">
+										<p class = "logo__name">Free-Courier<span class= "logo__yellow-com">.com</span></p>
+										<p class = "logo__about">Поиск курьеров по всей России</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!--authorization-->
+						<div class="col-md-6 col-xs-6 col-sm-6 ">
+							<form method = "POST" class = "main-form">
+								<input type="text" class="main-form__login" name="login" placeholder="Логин">
+								<input type="password" class="main-form__password" name="pass" placeholder="Пароль">
+								<button class = "main-form__button">Войти</button>
+								<div class="main-form__forgot">
+        							<a class="forgot-a" href="#">Забыли пароль?</a>
+								</div>
+							</form>
+							<div class="hidd_authoriz">
+								<a href="" class = "hidd_authoriz__button">Войти</a>
+							</div>
+						</div>
+						<!-- modal window -->
+						<div class="main-form__modal-wr">
+							<div class="modal-wr__window">
+							<div class="modal-wr__window-close">Х</div>
+								<form method = "POST" class = "main-form">
+									<input type="text" class="main-form__login" name="login" placeholder="Логин">
+									<input type="password" class="main-form__password" name="pass" placeholder="Пароль">
+									<button class = "main-form__button">Войти</button>
+									<div class="main-form__forgot">
+										<a class="forgot-a" href="#">Забыли пароль?</a>
+									</div>
+								</form>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--nav-->
+			<div class="container" id="dell-cont">
+				<div class="row">
+					<div class="col-md-12">
+						<!--hidden menu for mob-->
+						<div class="hidd-menu">
+							<a href="#"><img class="hidd-menu__img" src="img/but_for_hidd_main_menu.png" alt="open"></a>
+							<a class="hidd-menu__text" href="#">Открыть меню</a>
+							<!--list of the hidden menu-->
+							<ul class="hidd-menu__ul">
+								<li class="hidd-menu__li"><a class="hidd-menu__link" href="#">Разместить заявку</a></li>
+								<li class="hidd-menu__li"><a class="hidd-menu__link" href="#">Поиск заказов</a></li>
+								<li class="hidd-menu__li"><a class="hidd-menu__link" href="#">Сервис</a></li>
+								<li class="hidd-menu__li"><a class="hidd-menu__link" href="#">Курьерам</a></li>
+								<li class="hidd-menu__li"><a class="hidd-menu__link" href="#">Заказчикам</a></li>
+								<li class="hidd-menu__li"><a class="hidd-menu__link" href="#">Как это работает</a></li>
+							</ul>
+						</div>
+						<!--nav-->
+						<nav class="menu for-stick">
+							<ul class="menu__ul">
+								<li class="menu__li"><a class="menu__link" href="#">Разместить заявку</a></li>
+								<li class="menu__li"><a class="menu__link" href="#">Поиск заказов</a></li>
+								<li class="menu__li"><a class="menu__link" href="#">Сервис</a></li>
+								<li class="menu__li"><a class="menu__link" href="#">Курьерам</a></li>
+								<li class="menu__li"><a class="menu__link" href="#">Заказчикам</a></li>
+								<li class="menu__li"><a class="menu__link" href="#">Как это работает</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--for couriers and customers (couriers-customers)-->
+		<section class="couriers-customers">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="description-serv">
+							<h1 class = "description-serv__caption">УДОБНЫЙ СЕРВИС ДЛЯ КУРЬЕРОВ И ЗАКАЗЧИКОВ</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- tables for couriers and customers -->
+			<div class="container">
+				<div class="row for-repl-bl">
+					<!-- table couriers -->
+					<div class="col-md-6 ord2">
+						<div class="table-couriers">
+							<h3 class= "table-couriers__whom">Курьерам:</h3>
+							<p class="table-couriers__order">Заказы рядом с Вами</p>
+							<div class="table-couriers__line-first"></div>
+							<p class="table-couriers__schedule">Гибкий график работы</p>
+							<div class="table-couriers__line-first"></div>
+							<p class="table-couriers__payment">Своевременная оплата</p>
+							<a href="#" class="table-couriers__become-courier">Стать курьером</a>
+						</div>
+					</div>
+					<!-- table customers -->
+					<div class="col-md-6 ord1">
+						<div class="t-customers">
+							<h3 class= "t-customers__whom">Заказчикам:</h3>
+							<p class="t-customers__preis">Самая низкая цена</p>
+							<div class="t-customers__line-first"></div>
+							<p class="t-customers__reg">Без лишних оформлений</p>
+							<div class="t-customers__line-first"></div>
+							<p class="t-customers__all">Все виды доставок</p>
+							<a href="#" class="t-customers__bec-cust">Оформить доставку</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- table customers -->
+		<section class="eyes-custom">
+			<div class="work-safely">
+				<h3 class="work-safely__text">Работай безопасно!</h3>
+				<a class="work-safely_link" href="#">Подробнее о безопасности сделки</a>
+				
+			</div>
+			<div class="ser-for-custom">
+				<div class="ser-for-custom__line1"></div>
+				<div class="ser-for-custom__text">Сервис глазами заказчика</div>
+				<div class="ser-for-custom__line2"></div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<!-- circle1 -->
+					<div class="col-md-4 col-sm-12">
+						<div class="place-order wow zoomInUp " data-wow-duration="2s" >
+							<h4 class="place-order__head">1.Разместить</h4>
+							<span class="place-order__head-sp" >заявку</span>
+							<p class="place-order__need">Укажите что нужно доставить</p>
+							<div class="place-order__line"></div>
+							<p class="place-order__date">Укажите дату 
+							доставить</p>
+							<div class="place-order__line"></div>
+							<p class="place-order__date">Укажите адресс доставки</p>
+						</div>
+						<div class="arrow"></div>
+					</div>
+					<!-- circle2 -->
+					<div class="col-md-4 col-sm-12">
+						<div class="sentence wow zoomInUp" data-wow-duration="2s" data-wow-delay="1s">
+							<h4 class="sentence__head">2.Получайте</h4>
+							<span class="sentence__head-sp" >предложение</span>
+							<p class="sentence__cour">Курьеры предлагают свои  услуги</p>
+							<div class="sentence__line"></div>
+							<p class="sentence__sms">Вы получаете уведомление</p>
+							<div class="sentence__line"></div>
+							<p class="sentence__nosee">Курьеры не видят ваших контактов</p>
+						</div>
+						<div class="arrow2"></div>
+					</div>
+					<!-- circle3 -->
+					<div class="col-md-4 col-sm-12">
+						<div class="select-cour wow zoomInUp" data-wow-duration="2s" data-wow-delay="2s">
+							<h4 class="select-cour__head">3.Выберите</h4>
+							<span class="select-cour__head-sp" >курьера</span>
+							<p class="select-cour__comp">Сравниваете предложения курьеров</p>
+							<div class="select-cour__line"></div>
+							<p class="select-cour__ok">Выбираете нужного курьера</p>
+							<div class="select-cour__line"></div>
+							<p class="select-cou__end">Выбираете исполнителя</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- cour-wait -->
+		<section class="cour-wait">
+			<h2 class="cour-wait__h2">БОЛЕЕ 600 КУРЬЕРОВ ЖДУТ  ВАШЕЙ ЗАЯВКИ</h2>
+			<h3 class="cour-wait__h3">Преимущества для заказчика</h3>
+			<div class="container">
+				<div class="row">
+					<!-- steps-cust -->
+					<div class="steps-cust">
+						<!-- steps-cust__st1 -->
+						<div class="steps-cust__st1">
+							<span class="steps-cust__st1-num">1</span>
+							<span class="steps-cust__st1-text">Удобное и быстрое  размещение заявки</span>
+						</div>
+						<!-- steps-cust__st2 -->
+						<div class="steps-cust__st2">
+							<span class="steps-cust__st2-num">2</span>
+							<span class="steps-cust__st2-text">Вы сами устанавливаете  цену доставки</span>
+						</div>
+						<!-- steps-cust__st3 -->
+						<div class="steps-cust__st3">
+							<span class="steps-cust__st3-num">3</span>
+							<span class="steps-cust__st3-text">Курьер в день заказа</span>
+						</div>
+						<!-- steps-cust__st4 -->
+						<div class="steps-cust__st4">
+							<span class="steps-cust__st4-num">4</span>
+							<span class="steps-cust__st4-text">Минимум бумажной волокиты</span>
+						</div>
+						<!-- steps-cust__st5 -->
+						<div class="steps-cust__st5">
+							<span class="steps-cust__st5-num">5</span>
+							<span class="steps-cust__st5-text">Сотрудничество на прямую с курьером</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- cour-wait__become -->
+			<div class="cour-wait__become">
+				<a class="cour-wait__become-but" href="#">Оформить заявку</a>
+			</div>
+		</section>
+		<!-- service eyes of the courier -->
+		<section class="ey-courier">
+			<div class="ser-for-courier">
+				<div class="ser-for-courier__line1"></div>
+				<div class="ser-for-courier__text">Сервис глазами курьера</div>
+				<div class="ser-for-courier__line2"></div>
+			</div>
+			<!-- circles -->
+			<div class="container">
+				<div class="row">
+					<!-- circle1 -->
+					<div class="col-md-4 col-sm-12">
+						<div class="place-order-two wow zoomInUp" data-wow-duration="2s">
+							<h4 class="place-order-two__head">1.Разместить</h4>
+							<span class="place-order-two__head-sp" >заявку</span>
+							<p class="place-order-two__need">Укажите что нужно доставить</p>
+							<div class="place-order-two__line"></div>
+							<p class="place-order-two__date">Укажите дату 
+							доставить</p>
+							<div class="place-order-two__line"></div>
+							<p class="place-order-two__date">Укажите адресс доставки</p>
+						</div>
+						<div class="arrow-two"></div>
+					</div>
+					<!-- circle2 -->
+					<div class="col-md-4 col-sm-12">
+						<div class="sentence-two wow zoomInUp" data-wow-duration="2s" data-wow-delay="1s">
+							<h4 class="sentence-two__head">2.Получайте</h4>
+							<span class="sentence-two__head-sp" >предложение</span>
+							<p class="sentence-two__cour">Курьеры предлагают свои  услуги</p>
+							<div class="sentence-two__line"></div>
+							<p class="sentence-two__sms">Вы получаете уведомление</p>
+							<div class="sentence-two__line"></div>
+							<p class="sentence-two__nosee">Курьеры не видят ваших контактов</p>
+						</div>
+						<div class="arrow2-two"></div>
+					</div>
+					<!-- circle3 -->
+					<div class="col-md-4 col-sm-12">
+						<div class="select-cour-two wow zoomInUp" data-wow-duration="2s" data-wow-delay="2s">
+							<h4 class="select-cour-two__head">3.Выберите</h4>
+							<span class="select-cour__head-sp" >курьера</span>
+							<p class="select-cour-two__comp">Сравниваете предложения курьеров</p>
+							<div class="select-cour-two__line"></div>
+							<p class="select-cour-two__ok">Выбираете нужного курьера</p>
+							<div class="select-cour-two__line"></div>
+							<p class="select-cou-two__end">Выбираете исполнителя</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- circle1 -->
+		<section class="reg-app">
+			<h2 class="reg-app__h2">БОЛЕЕ 1000 ЗАЯВОК ОТ ПОСТОЯННЫХ ЗАКАЗЧИКОВ</h2>
+			<h3 class="reg-app__h3">Преимущества для курьера</h3>
+			<div class="container">
+				<div class="row">
+					<!-- steps-cust -->
+					<div class="st-cour">
+						<!-- steps-cust__st1 -->
+						<div class="st-cour__st1">
+							<span class="st-cour__st1-num">1</span>
+							<span class="st-cour__st1-text">Работа в выбранном районе</span>
+						</div>
+						<!-- steps-cust__st2 -->
+						<div class="st-cour__st2">
+							<span class="st-cour__st2-num">2</span>
+							<span class="st-cour__st2-text">Оплата в день выполнения</span>
+						</div>
+						<!-- steps-cust__st3 -->
+						<div class="st-cour__st3">
+							<span class="st-cour__st3-num">3</span>
+							<span class="st-cour__st3-text">Возможность  выбора заказов по вашим критериям</span>
+						</div>
+						<!-- steps-cust__st4 -->
+					</div>
+				</div>
+			</div>
+			<!-- reg-app__become -->
+			<div class="reg-app__become">
+				<a class="reg-app__become-but" href="#">Стать курьером</a>
+			</div>
+		</section>
+		<section class="our-service">
+			<div class="your-assis">
+				<div class="your-assis__line1"></div>
+				<div class="your-assis__text">Наш курьерский сервис - ваш деловой помощник!</div>
+				<div class="your-assis__line2"></div>
+			</div>
+			<!-- list-serv1 -->
+			<div class="list-serv1">
+				<div class="container list-serv1__br">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="list-serv1__head">Закажите доставку по: </div>
+						</div>
+						<div class="col-md-6">
+							<a class="list-serv1__link" href="#">Курьерская доставка по Москве и области</a>
+						</div>
+						<div class="col-md-6">
+							<a class="list-serv1__link" href="#">Курьерская доставка по Санкт-Петербургу и области</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- list-serv2 -->
+			<div class="list-serv2">
+				<div class="container list-serv2__br">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="list-serv2__head">Выберите вид доставки </div>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv2__link" href="#">Доставка на авто</a>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv2__link" href="#"> Доставка пешим курьером </a>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv2__link" href="#">Экспресс доставка</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- list-serv3 -->
+			<div class="list-serv3">
+				<div class="container list-serv3__br">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="list-serv1__head">Зажите доставку по времени суток: </div>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv3__link" href="#">Круглосуточная доставка</a>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv3__link" href="#">Ночная доставка </a>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv3__link" href="#">Доставка выходного дня</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- list-serv4 -->
+			<div class="list-serv4">
+				<div class="container list-serv4__br">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="list-serv4__head">Вам нужно: </div>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv4__link" href="#">Доставить груз</a>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv4__link" href="#">Доставить документы </a>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv4__link" href="#">Доставка на дом</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- list-serv5 -->
+			<div class="list-serv5">
+				<div class="container list-serv5__br">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="list-serv5__head">Вы искали:</div>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv5__link" href="#">Курьерская служба доставки </a>
+							<a class="list-serv5__link" href="#">Работа курьером</a>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv5__link" href="#">Доставка товаров</a>
+							<br><a class="list-serv5__link" href="#"> Недорогая доставка</a>
+						</div>
+						<div class="col-md-4">
+							<a class="list-serv5__link" href="#">Курьер для интернет магазина</a>
+							<a class="list-serv5__link" href="#">Доставка курьером</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer -->
+		<footer class="main-foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="col-md-6 col-xs-6">
+							<nav class="foot-list1">
+								<ul class="foot-list1__ul">
+									<li class="foot-list1__item"><a class="foot-list1__list" href="">Разместить заявку</a></li>
+									<li class="foot-list1__item"><a class="foot-list1__list" href="">Поиск заказов</a></li>
+									<li class="foot-list1__item"><a class="foot-list1__list" href="">Сервис</a></li>
+									
+								</ul>
+							</nav>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<nav class="foot-list2">
+								<ul class="foot-list2__ul">
+									<li class="foot-list2__item"><a class="foot-list1__list" href="">Курьерам</a></li>
+									<li class="foot-list2__item"><a class="foot-list1__list" href="">Заказчикам</a></li>
+									<li class="foot-list2__item"><a class="foot-list1__list" href="">Как это работает</a></li>
+								</ul>
+							</nav>
+						</div>	
+					</div>
+					<!-- social -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="social">
+							<h4 class="social__head" >Мы в социальных стеях:</h4>
+							<a class="social__vk" href="#"></a>
+							<a class="social__cm" href="#"></a>
+							<a class="social__tw" href="#"></a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- text -->
+			<div class="main-foot__line"></div>
+			<div class="main-foot__text">
+				<p class="main-foot__text-p">Если Вы используете Free-courier, Вы принимаете Соглашение.</p>
+				<p class="main-foot__text-p">Сайт живет по московскому времени</p>
+				<p class="main-foot__text-p">E-mail:support@free-courier.com</p>
+			</div>
+			
+		</footer>
+		<!--[if lt IE 9]>
+			<script src="libs/html5shiv/es5-shim.min.js"></script>
+			<script src="libs/html5shiv/html5shiv.min.js"></script>
+			<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+			<script src="libs/respond/respond.min.js"></script>
+		<![endif]-->
+		<script src="libs/jquare/jquery-2.1.3.min.js"></script>
+		<script src="libs/wow/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+		<script src="libs/animateLogo/myAnimateLogo.js"></script>
+		<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+		<script src="libs/stick/jquery.sticky.js"></script>
+		<script src="libs/animate/animate-css.js"></script>
+		<script src="libs/waypoints/waypoints.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

@@ -1,0 +1,2059 @@
+@import url(reset.css)
+
+/* loader */
+
+
+.loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+
+.loader_inner
+	background-image: url("../img/preloader.gif")
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+	height: 70px
+	width: 70px
+	margin-top: -30px
+	margin-left: -30px
+	left: 50%
+	top: 50%
+	position: absolute
+
+/* BODY */
+body
+	position: relative
+	overflow-x: hidden
+
+
+
+//stop scroll
+
+/* for mobile, when open menu  */
+.scroll-hidden 
+	overflow-y: hidden
+
+
+/* HEADER */
+
+
+/* main-head  */
+
+.main-head
+	background-color: #fff
+
+/* logo */
+
+.logo-authorization
+	background-color: #f6f5f5
+	box-shadow:  0px 0px 1px 0px rgba(0,0,0,0.75)
+
+
+
+.logo
+	padding: 25px 0px 25px 10px
+	min-height: 100px
+
+
+.logo__a
+	text-decoration: none
+	&:hover
+		text-decoration: none	
+
+
+.logo__img
+	float: left
+
+
+.logo__content
+	float: left
+	margin-top: -5px 
+
+
+
+.logo__name
+	font-family: BlackItalicc
+	font-style: italic
+	font-size: 24px
+	font-weight: 900
+	font-style: italic
+	color: black
+	padding-left: 10px
+
+
+.logo__about
+	color: black
+	font-family: HelveticaNeueCyr-Light
+	font-size: 14px
+	font-weight: 300
+	padding-left: 10px
+
+
+.logo__yellow-com
+	color: #f39e09
+
+
+/* main-form */
+
+.main-form
+	margin-top: 35px
+	padding-left: 79px
+
+	
+/*  login */
+.main-form__login
+	width: 135px
+	height: 29px
+	background-color: white
+	border: 2px solid #dfdfdd
+	border-radius: 4px
+	padding-left: 9px
+	color: #979797
+	font-family: HelveticaNeueCyr-Light
+	font-size: 14px
+	font-weight: 300
+	outline: none
+
+
+/* password */
+.main-form__password
+	width: 135px
+	height: 29px
+	background-color: white
+	border: 2px solid #dfdfdd
+	border-radius: 4px
+	padding-left: 9px
+	color: #979797
+	font-family: HelveticaNeueCyr-Light
+	font-size: 14px
+	font-weight: 300
+	outline: none	
+	margin-left: 8px
+	
+	
+/* button */
+.main-form__button
+	width: 98px
+	height: 29px
+	background-color: white
+	background-image: linear-gradient(to top, #f39e09 0%, #f8c05e 100%)
+	border-radius: 2px
+	box-shadow: inset 0 0 0 rgba(218, 139, 0, 0.5)
+	outline: none
+	color: #f6f5f5
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 14px
+	font-weight: 500
+	border: 0
+	outline: none
+	margin-left: 4px
+	&:hover
+		transition: all 0.3s ease
+		background-image: linear-gradient(to top, #0095fe 0%, #82d1ff 100%)
+	&:active
+		color: red
+
+
+/* forgot-a */
+.main-form__forgot
+	margin-left: 187px
+
+.forgot-a
+	color: #f4a418
+	font-family: HelveticaNeueCyr-Light
+	font-size: 12px
+	font-weight: 300
+	text-decoration: underline
+
+
+/* modal window */
+
+.main-form__modal-wr
+	display: none
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,0.7)
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 999
+
+
+
+.modal-wr__window
+	width: 300px
+	height: 250px
+	background: #fff
+	text-align: center
+	margin: auto
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	border-radius: 2px
+	border: 1px solid #f39e09
+	position: relative
+	form
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		width: 300px
+		height: 100%
+		padding: 0px
+		margin: 0px
+		padding-top: 15px
+		align-items: center
+		.main-form__forgot
+			margin: 0px
+			padding: 0px
+		.main-form__password
+			margin-left: 0px
+		.main-form__button
+			margin: 0px
+
+
+.modal-wr__window-close
+	position: absolute
+	top: 10px
+	right: 10px
+	font-size: 14px
+	cursor: pointer
+	color: #23527c
+
+
+/* menu (nav) */
+
+
+
+
+.menu__ul
+	display: inline-block
+
+
+.menu__li
+	display: inline-block
+	line-height: 64px
+	padding-left: 39px
+
+
+.menu__link
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	color: #262626
+	&:hover
+		text-decoration: none
+		color: #f39e09
+		transition: all 0.3s ease
+	&:active
+		color: red
+
+
+
+/* HEADER OF THE MOBILE  */
+
+.hidd-mob-head
+	width: 100%
+	text-align: center
+	background-color: #e2e2e2
+	height: 25px
+	display: none
+	padding-top: 2px
+
+.hidd-mob-head__text
+	font-family: HelveticaNeueCyr-Light
+	color: black
+	font-size: 18px
+	font-weight: 300
+
+
+/* hidd_authoriz  */
+
+.hidd_authoriz
+	display: none
+
+
+.hidd_authoriz__button
+	width: 98px
+	height: 29px
+	background-color: white
+	background-image: linear-gradient(to top, #f39e09 0%, #f8c05e 100%)
+	border-radius: 2px
+	box-shadow: inset 0 0 0 rgba(218, 139, 0, 0.5)
+	outline: none
+	color: #f6f5f5
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 14px
+	font-weight: 500
+	display: block
+	border: 0
+	outline: none
+	margin-left: 4px
+	padding: 4px 27px
+	&:hover
+		color: black
+		transition: all 0.3s ease
+		text-decoration: none	
+	&:active
+		color: red
+
+
+/* hidd-menu  */
+
+.hidd-menu
+	display: none
+	float: left
+	position: relative
+
+
+.hidd-menu__text
+	color: #262626
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	text-transform: uppercase
+	&:hover
+		text-decoration: none
+		color: #f39e09
+		transition: all 0.3s ease
+
+.hidd-menu__img
+	margin-bottom: 5px
+
+
+.hidd-menu__ul
+	max-width: 170px
+	position: absolute
+	z-index: 99
+	top: 34px
+	left: 27px
+	background-color: #ececec
+	text-align: left
+	border-radius: 0px 10px 10px
+	display: none
+
+.hidd-menu__li
+	padding: 9px 7px
+
+.hidd-menu__link
+	text-decoration: none
+	color: #6a6a6a
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	&:hover
+		color: #f39e09
+		transition: all 0.3s ease
+		text-decoration: none
+	&:active
+		text-decoration: none
+		color: red
+
+
+
+
+
+/* THE END for HEADER of the bobile  */
+
+
+/* THE END HEADER */
+
+
+/*SECTION couriers and customers*/
+
+.couriers-customers
+	min-height: 600px
+	background-image: url(../img/bg_couriers-customers.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+
+
+
+
+/* description for couriers and customers*/
+
+
+.description-serv
+	text-align: center
+	margin-left: 35px
+	margin-top: 35px
+	background-image: url(../img/bg_text_desc.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: center
+	height: 135px
+	line-height: 43px
+	animation-delay: 2s
+
+
+
+
+.description-serv__caption
+	color: #010101
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 36px
+	font-weight: 500
+	padding-top: 20px
+	
+
+/* tables for couriers  */
+
+.table-couriers
+	max-width: 340px
+	margin-left: 69px
+	margin-top: 35px
+	text-align: center
+	border: 5px solid white
+
+
+
+
+.table-couriers__whom
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 24px
+	font-weight: 500
+	color: #ffffff
+
+
+.table-couriers__order
+	font-family: HelveticaNeueCyr-Light
+	font-size: 24px
+	font-weight: 300
+	color: #ffffff
+	padding-top: 37px
+
+
+.table-couriers__line-first
+	max-width: 224px
+	height: 2px
+	background-image: url(../img/bg_table_cur_line.png)
+	margin-left: 55px
+
+
+.table-couriers__schedule
+	font-family: HelveticaNeueCyr-Light
+	font-size: 24px
+	font-weight: 300
+	color: #ffffff
+	padding-top: 5px
+
+
+
+.table-couriers__payment
+	font-family: HelveticaNeueCyr-Light
+	font-size: 24px
+	font-weight: 300
+	color: #ffffff
+	padding-top: 5px
+
+
+
+.table-couriers__become-courier
+	max-width: 226px
+	width: 100%
+	height: 51px
+	background-color: white
+	background-image: linear-gradient(to top, #0095fe 0%, #82d1ff 100%)
+	border-radius: 2px
+	box-shadow: inset 0 0 0 rgba(0, 48, 94, 0.5)
+	border: .1px solid black
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	margin: 40px auto
+	display: block
+	margin-bottom: 40px
+	text-align: center
+	padding: 13px 10px
+	outline: none
+	&:active
+		color: red
+	&:hover
+		background-image: linear-gradient(to top, #f39e09 0%, #f8c05e 100%)
+		text-decoration: none
+		color: white
+		
+
+
+
+/* tables for customers  */
+
+
+.t-customers
+	max-width: 340px
+	margin-left: 69px
+	margin-top: 35px
+	text-align: center
+	border: 5px solid white
+	animation-delay: 2s
+
+
+.t-customers__whom
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 24px
+	font-weight: 500
+	color: #ffffff
+
+
+
+.t-customers__preis
+	font-family: HelveticaNeueCyr-Light
+	font-size: 24px
+	font-weight: 300
+	color: #ffffff
+	padding-top: 37px
+
+.t-customers__line-first
+	max-width: 224px
+	height: 2px
+	background-image: url(../img/bg_table_cur_line.png)
+	margin-left: 55px
+
+
+.t-customers__reg
+	font-family: HelveticaNeueCyr-Light
+	font-size: 24px
+	font-weight: 300
+	color: #ffffff
+	padding-top: 5px
+
+
+
+
+.t-customers__all
+	font-family: HelveticaNeueCyr-Light
+	font-size: 24px
+	font-weight: 300
+	color: #ffffff
+	padding-top: 5px
+
+
+
+.t-customers__bec-cust
+	max-width: 226px
+	width: 100%
+	height: 51px
+	background-color: white
+	background-image: linear-gradient(to top, #f39e09 0%, #f8c05e 100%)
+	border-radius: 2px
+	box-shadow: inset 0 0 0 rgba(218, 139, 0, 0.5)
+	border: .1px solid black
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	margin: 40px auto
+	display: block
+	margin-bottom: 40px
+	text-align: center
+	padding: 13px 10px
+	outline: none
+	&:active
+		color: red
+	&:hover
+		background-image: linear-gradient(to top, #0095fe 0%, #82d1ff 100%)
+		text-decoration: none
+		color: white
+
+
+
+
+/* the END SECTION couriers and customers*/
+
+
+
+/* eyes-custom */
+
+.eyes-custom
+	min-height: 551px
+	position: relative
+	
+
+
+
+.work-safely
+	background-color: #f6f5f5
+	margin-top: 23px
+	text-align: center
+
+
+.work-safely__text
+	color: #202020
+	font-family: HelveticaNeueCyr-Light
+	font-size: 24px
+	font-weight: 300
+	margin: 10px 130px 0px 130px
+	padding-top: 10px
+
+.work-safely_link
+	color: #009c0f
+	font-family: HelveticaNeueCyr-Light
+	font-size: 18px
+	font-weight: 300
+	border-bottom: 1px dashed #009c0f
+	line-height: 68px
+	margin-left: 12px
+	position: relative
+	cursor: pointer
+	&:hover
+		color: #f39e09
+		transition: all 0.3s ease
+		text-decoration: none
+	&:before
+		content: ""
+		position: absolute
+		background-image: url(../img/safely.png)
+		background-repeat: no-repeat
+		width: 30px
+		height: 40px
+		top: -9px
+		left: -45px
+
+
+
+	
+
+.ser-for-custom
+	display: flex
+	width: 100%
+
+
+
+
+.ser-for-custom__text
+	color: #202020
+	font-family: HelveticaNeueCyr-Light
+	font-size: 24px
+	font-weight: 300
+	text-align: center
+	max-width: 30%
+	width: 100%
+	margin-top: 34px 
+	margin-left: -2px
+	
+	
+.ser-for-custom__line1
+	height: 2px
+	margin-top: 53px 
+	max-width: 482px
+	width: 100%
+	background-color: #33aafe
+	max-width: 40%
+	width: 100%
+
+
+
+.ser-for-custom__line2
+	height: 2px
+	margin-top: 53px 
+	background-color: #33aafe
+	max-width: 480px
+	max-width: 40%
+	width: 100%
+	
+
+/* circles */
+
+.place-order
+	max-width: 285px
+	width: 100%
+	text-align: center
+	margin-top: 31px
+	margin-left: 31px
+	height: 284px
+	background-image: url(../img/bg_circle.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	position: relative
+
+
+
+
+
+.place-order__head
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+	max-width: 133px
+	padding-top: 31px 
+	padding-left: 78px
+	text-align: center
+
+
+.place-order__head-sp
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+
+
+.place-order__need
+	margin-top: 38px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 36px
+
+
+.place-order__line
+	width: 133px
+	height: 2px
+	background-color: #33aafe
+	margin-top: 2px
+	margin-left: 76px
+
+.place-order__date
+	margin-top: -3px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 36px
+
+
+.arrow
+	background-image: url(../img/arrow.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	width: 68px
+	height: 38px
+	position: absolute
+	top: 47px
+	right: -45px
+	animation-delay: 1.5s
+
+
+
+
+/* sentence */
+
+
+.sentence
+	max-width: 285px
+	width: 100%
+	text-align: center
+	margin-top: 30px
+	margin-left: 22px
+	height: 284px
+	background-image: url(../img/bg_circle.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	position: relative
+
+
+
+.sentence__head
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+	max-width: 133px
+	padding-top: 31px 
+	padding-left: 81px
+	text-align: center
+
+	
+
+.sentence__head-sp
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+	margin-right: 7px
+
+
+
+.sentence__cour
+	margin-top: 25px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 24px
+	max-width: 204px
+	text-align: center
+	margin-left: 36px
+
+.sentence__line
+	width: 133px
+	height: 2px
+	background-color: #33aafe
+	margin-top: 2px
+	margin-left: 76px
+
+
+.sentence__sms
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 36px
+	margin-left: -9px
+
+.sentence__nosee
+	max-width: 220px
+	margin-top: -3px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 29px
+	margin-left: 26px
+
+
+
+.arrow2
+	background-image: url(../img/arrow2.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	bottom: 21px
+	right: -27px
+	width: 68px
+	height: 38px
+	position: absolute
+	animation-delay: 2s
+
+
+/* Courier choice */
+
+.select-cour
+	max-width: 285px
+	width: 100%
+	text-align: center
+	margin-top: 30px
+	margin-left: 11px
+	height: 284px
+	background-image: url(../img/bg_circle.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	position: relative
+
+	
+.select-cour__head
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+	max-width: 133px
+	padding-top: 33px 
+	padding-left: 84px
+	text-align: center
+
+.select-cour__head-sp
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+	margin-right: 7px
+
+.select-cour__comp
+	margin-top: 25px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 24px
+	max-width: 204px
+	text-align: center
+	margin-left: 36px
+
+
+.select-cour__line
+	width: 133px
+	height: 2px
+	background-color: #33aafe
+	margin-top: 2px
+	margin-left: 76px
+
+.select-cour__ok
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 36px
+	margin-left: -9px
+
+.select-cou__end
+	margin-top: -3px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 36px
+
+
+/* the end SECTION couriers and customers*/
+
+
+
+/* SECTION Couriers are waiting (class="cour-wait")*/
+
+.cour-wait
+	min-height: 436px
+	background-image: url(../img/bg_cour-wait.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	text-align: center
+
+
+
+
+
+
+.cour-wait__h2
+	max-width: 530px
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5)
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 36px
+	font-weight: 700
+	line-height: 36px
+	margin: 0 auto
+	padding-top: 30px
+
+
+.cour-wait__h3
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5)
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 24px
+	font-weight: 700
+	line-height: 36px
+	margin: 0 auto
+	padding-top: 16px
+
+
+.steps-cust
+	text-align: center
+	padding-top: 18px
+
+
+.steps-cust__st1
+	display: inline-block
+	text-align: center
+	width: 180px
+	vertical-align: top
+
+
+
+.steps-cust__st1-num
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 24px
+	font-weight: 500
+	line-height: 54px
+	width: 53px
+	height: 53px
+	float: none
+	display: inline-block
+	background-image: url(../img/bg_steps.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+
+
+.steps-cust__st1-text
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	display: block
+	padding-top: 22px
+	max-width: 172px
+
+
+
+
+/* steps-cust__st2*/
+
+
+.steps-cust__st2
+	display: inline-block
+	text-align: center
+	width: 180px
+	vertical-align: top
+
+
+.steps-cust__st2-num
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 24px
+	font-weight: 500
+	line-height: 54px
+	width: 53px
+	height: 53px
+	float: none
+	display: inline-block
+	background-image: url(../img/bg_steps.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+
+
+.steps-cust__st2-text
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	display: block
+	padding-top: 22px
+	max-width: 172px
+
+
+/* steps-cust__st3*/
+
+
+.steps-cust__st3
+	display: inline-block
+	text-align: center
+	width: 180px
+	vertical-align: top
+
+
+.steps-cust__st3-num
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 24px
+	font-weight: 500
+	line-height: 54px
+	width: 53px
+	height: 53px
+	float: none
+	display: inline-block
+	background-image: url(../img/bg_steps.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+
+.steps-cust__st3-text
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	display: block
+	padding-top: 22px
+	max-width: 172px
+
+
+/* steps-cust__st4*/
+
+.steps-cust__st4
+	display: inline-block
+	text-align: center
+	width: 180px
+	vertical-align: top
+
+
+.steps-cust__st4-num
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 24px
+	font-weight: 500
+	line-height: 54px
+	width: 53px
+	height: 53px
+	float: none
+	display: inline-block
+	background-image: url(../img/bg_steps.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+
+.steps-cust__st4-text
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	display: block
+	padding-top: 22px
+	max-width: 172px
+
+
+
+/* steps-cust__st5 */
+
+.steps-cust__st5
+	display: inline-block
+	text-align: center
+	width: 180px
+	vertical-align: top
+
+.steps-cust__st5-num
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 24px
+	font-weight: 500
+	line-height: 54px
+	width: 53px
+	height: 53px
+	float: none
+	display: inline-block
+	background-image: url(../img/bg_steps.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+
+
+
+.steps-cust__st5-text
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	display: block
+	padding-top: 22px
+	max-width: 169px
+
+
+
+
+.cour-wait__become
+	padding-bottom: 30px
+	
+
+
+
+.cour-wait__become-but
+	width: 226px
+	height: 51px
+	background-color: white
+	background-image: linear-gradient(to top, #f39e09 0%, #f8c05e 100%)
+	border-radius: 2px
+	box-shadow: inset 0 0 0 rgba(0, 48, 94, 0.5)
+	display: block
+	margin: 13px auto
+	padding: 13px 15px
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	border: 0.1px solid black
+	&:active
+		color: red
+	&:hover
+		background-image: linear-gradient(to top, #0095fe 0%, #82d1ff 100%)
+		text-decoration: none
+		color: white
+
+
+
+/* the end SECTION Couriers are waiting (class="cour-wait")*/
+
+/*  SECTION service eyes of the courier (class="ey-courier")*/
+
+.ey-courier
+	min-height: 453px
+
+
+.ser-for-courier
+	display: flex
+	width: 100%
+
+.ser-for-courier__text
+	color: #202020
+	font-family: HelveticaNeueCyr-Light
+	font-size: 24px
+	font-weight: 300
+	text-align: center
+	max-width: 30%
+	width: 100%
+	margin-top: 46px 
+	margin-left: 7px
+
+.ser-for-courier__line1
+	height: 2px
+	margin-top: 63px 
+	max-width: 482px
+	width: 100%
+	background-color: #33aafe
+	max-width: 39%
+	width: 100%
+
+
+.ser-for-courier__line2
+	height: 2px
+	margin-top: 63px 
+	background-color: #33aafe
+	max-width: 39%
+	width: 100%
+	
+
+/*  circle1 */
+
+
+.place-order-two
+	max-width: 285px
+	width: 100%
+	text-align: center
+	margin-top: 31px
+	margin-left: 31px
+	height: 284px
+	background-image: url(../img/bg_circle.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	position: relative
+
+
+
+
+
+.place-order-two__head
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+	max-width: 133px
+	padding-top: 31px 
+	padding-left: 78px
+	text-align: center
+
+
+.place-order-two__head-sp
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+
+
+.place-order-two__need
+	margin-top: 38px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 36px
+
+
+.place-order-two__line
+	width: 133px
+	height: 2px
+	background-color: #33aafe
+	margin-top: 2px
+	margin-left: 76px
+
+.place-order-two__date
+	margin-top: -3px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 36px
+
+
+.arrow-two
+	background-image: url(../img/arrow.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	width: 68px
+	height: 38px
+	position: absolute
+	top: 47px
+	right: -45px
+	animation-delay: 1.5s
+
+
+/*  circle2 */
+
+
+
+.sentence-two
+	max-width: 285px
+	width: 100%
+	text-align: center
+	margin-top: 30px
+	margin-left: 22px
+	height: 284px
+	background-image: url(../img/bg_circle.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	position: relative
+
+
+
+.sentence-two__head
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+	max-width: 133px
+	padding-top: 31px 
+	padding-left: 81px
+	text-align: center
+
+	
+
+.sentence-two__head-sp
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+	margin-right: 7px
+
+
+
+.sentence-two__cour
+	margin-top: 25px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 24px
+	max-width: 204px
+	text-align: center
+	margin-left: 36px
+
+.sentence-two__line
+	width: 133px
+	height: 2px
+	background-color: #33aafe
+	margin-top: 2px
+	margin-left: 76px
+
+
+.sentence-two__sms
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 36px
+	margin-left: -9px
+
+.sentence-two__nosee
+	max-width: 220px
+	margin-top: -3px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 29px
+	margin-left: 26px
+
+
+
+.arrow2-two
+	background-image: url(../img/arrow2.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	bottom: 21px
+	right: -27px
+	width: 68px
+	height: 38px
+	position: absolute
+	animation-delay: 2.5s
+
+
+/*  circle3 */
+
+.select-cour-two
+	max-width: 285px
+	width: 100%
+	text-align: center
+	margin-top: 30px
+	margin-left: 11px
+	height: 284px
+	background-image: url(../img/bg_circle.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	position: relative
+
+	
+.select-cour-two__head
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+	max-width: 133px
+	padding-top: 33px 
+	padding-left: 84px
+	text-align: center
+
+.select-cour-two__head-sp
+	color: #ffffff
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+	margin-right: 7px
+
+.select-cour-two__comp
+	margin-top: 25px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 24px
+	max-width: 204px
+	text-align: center
+	margin-left: 36px
+
+
+.select-cour-two__line
+	width: 133px
+	height: 2px
+	background-color: #33aafe
+	margin-top: 2px
+	margin-left: 76px
+
+.select-cour-two__ok
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 36px
+	margin-left: -9px
+
+.select-cou-two__end
+	margin-top: -3px
+	color: #727070
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	line-height: 36px
+
+
+/* the end  SECTION service eyes of the courier (class="ey-courier")*/
+
+
+/*  SECTION Regular application (class="reg-app")*/
+
+
+.reg-app
+	min-height: 436px
+	background-image: url(../img/bg_more1.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	text-align: center
+
+.reg-app__h2
+	max-width: 545px
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5)
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 36px
+	font-weight: 700
+	line-height: 36px
+	margin: 0 auto
+	padding-top: 30px
+
+.reg-app__h3
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5)
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 24px
+	font-weight: 700
+	line-height: 36px
+	margin: 0 auto
+	padding-top: 16px
+
+
+
+.st-cour
+	text-align: center
+	padding-top: 18px
+
+
+/*  steps-cust__st1 */
+
+.st-cour__st1
+	display: inline-block
+	text-align: center
+	width: 180px
+	vertical-align: top
+
+
+.st-cour__st1-num
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 24px
+	font-weight: 500
+	line-height: 54px
+	width: 53px
+	height: 53px
+	float: none
+	display: inline-block
+	background-image: url(../img/bg_steps.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+
+.st-cour__st1-text
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	display: block
+	padding-top: 22px
+	max-width: 172px
+
+
+/*  steps-cust__st2 */
+
+
+.st-cour__st2
+	display: inline-block
+	text-align: center
+	width: 180px
+	vertical-align: top
+	margin: 0px 49px
+
+
+.st-cour__st2-num
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 24px
+	font-weight: 500
+	line-height: 54px
+	width: 53px
+	height: 53px
+	float: none
+	display: inline-block
+	background-image: url(../img/bg_steps.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+
+
+.st-cour__st2-text
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	display: block
+	padding-top: 22px
+	max-width: 172px
+
+
+
+/*  st-cour__st3 */
+
+
+.st-cour__st3
+	display: inline-block
+	text-align: center
+	width: 180px
+	vertical-align: top
+
+
+.st-cour__st3-num
+	color: white
+	font-family: HelveticaNeueCyr
+	font-size: 24px
+	font-weight: 500
+	line-height: 54px
+	width: 53px
+	height: 53px
+	float: none
+	display: inline-block
+	background-image: url(../img/bg_steps.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+
+
+.st-cour__st3-text
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	display: block
+	padding-top: 22px
+	max-width: 172px
+
+
+/*  reg-app__become */
+
+
+
+
+.reg-app__become-but
+	width: 226px
+	height: 51px
+	background-color: white
+	background-image: linear-gradient(to top, #0095fe 0%, #82d1ff 100%)	
+	border-radius: 2px
+	box-shadow: inset 0 0 0 rgba(0, 48, 94, 0.5)
+	display: block
+	margin: 27px auto
+	padding: 13px 15px
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	border: 0.1px solid black
+	&:active
+		color: red
+	&:hover
+		background-image: linear-gradient(to top, #f39e09 0%, #f8c05e 100%)
+		text-decoration: none
+		color: white
+
+/* the end  SECTION Regular application (class="reg-app")*/
+
+.our-service
+	min-height: 700px
+
+.your-assis
+	display: flex
+	width: 100%
+	margin-top: 29px
+
+
+.your-assis__text
+	color: #202020
+	font-family: HelveticaNeueCyr-Light
+	font-size: 24px
+	font-weight: 300
+	text-align: center
+	max-width: 50%
+	width: 100%
+	margin-top: 16px 
+
+
+
+.your-assis__line1
+	height: 2px
+	margin-top: 33px 
+	max-width: 482px
+	width: 100%
+	background-color: #33aafe
+	max-width: 25%
+	width: 100%
+
+.your-assis__line2
+	height: 2px
+	margin-top: 33px 
+	background-color: #33aafe
+	max-width: 25%
+	width: 100%
+
+
+
+
+/* list-serv1 */
+
+
+.list-serv1
+	text-align: center
+	margin-top: 32px
+
+
+
+.list-serv1__head
+	max-width: 820px
+	width: 100%
+	padding: 6px 25px
+	margin: 0px auto
+	background-color: #1cb1d7
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+
+.list-serv1__link
+	color: #202020
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	margin-left: -33px
+	border-bottom: 1px dashed #202020
+	line-height: 48px
+	&:hover
+		text-decoration: none
+		color: #f3a00e
+		border-bottom: 1px dashed #f3a00e
+
+
+
+
+.list-serv1__br
+	border: .5px solid #d1d1d1
+	border-top: none
+	max-width: 820px
+	width: 100%
+	&:hover
+		text-decoration: none
+		color: #f3a00e
+		border-bottom: 1px dashed #f3a00e
+
+
+
+/* list-serv2 */
+
+
+.list-serv2
+	text-align: center
+	margin-top: 19px
+
+.list-serv2__br
+	border: .5px solid #d1d1d1
+	border-top: none
+	max-width: 820px
+	width: 100%
+
+
+.list-serv2__head
+	max-width: 820px
+	width: 100%
+	padding: 6px 25px
+	margin: 0px auto
+	background-color: #1cb1d7
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+
+
+
+.list-serv2__link
+	color: #202020
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	margin-left: -33px
+	border-bottom: 1px dashed #202020
+	line-height: 48px
+	margin-left: 10px
+	text-align: left
+	&:hover
+		text-decoration: none
+		color: #f3a00e
+		border-bottom: 1px dashed #f3a00e
+
+/* list-serv3 */
+
+
+.list-serv3
+	text-align: center
+	margin-top: 19px
+
+.list-serv3__br
+	border: .5px solid #d1d1d1
+	border-top: none
+	max-width: 820px
+	width: 100%
+
+
+.list-serv3__head
+	max-width: 820px
+	width: 100%
+	padding: 6px 25px
+	margin: 0px auto
+	background-color: #1cb1d7
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+
+
+
+.list-serv3__link
+	color: #202020
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	margin-left: -33px
+	border-bottom: 1px dashed #202020
+	line-height: 48px
+	margin-left: 10px
+	text-align: left
+	&:hover
+		text-decoration: none
+		color: #f3a00e
+		border-bottom: 1px dashed #f3a00e
+
+
+/* list-serv4 */
+
+
+
+.list-serv4
+	text-align: center
+	margin-top: 19px
+
+.list-serv4__br
+	border: .5px solid #d1d1d1
+	border-top: none
+	max-width: 820px
+	width: 100%
+
+
+.list-serv4__head
+	max-width: 820px
+	width: 100%
+	padding: 6px 25px
+	margin: 0px auto
+	background-color: #1cb1d7
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+
+
+
+.list-serv4__link
+	color: #202020
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	margin-left: -33px
+	border-bottom: 1px dashed #202020
+	line-height: 48px
+	margin-left: 10px
+	text-align: left
+	&:hover
+		text-decoration: none
+		color: #f3a00e
+		border-bottom: 1px dashed #f3a00e
+
+/* list-serv5 */
+
+
+
+.list-serv3
+	text-align: center
+	margin-top: 19px
+
+.list-serv3__br
+	border: .5px solid #d1d1d1
+	border-top: none
+	max-width: 820px
+	width: 100%
+
+
+.list-serv3__head
+	max-width: 820px
+	width: 100%
+	padding: 6px 25px
+	margin: 0px auto
+	background-color: #1cb1d7
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+
+
+
+.list-serv3__link
+	color: #202020
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	margin-left: -33px
+	border-bottom: 1px dashed #202020
+	line-height: 48px
+	margin-left: 10px
+	text-align: left
+	&:hover
+		text-decoration: none
+		color: #f3a00e
+		border-bottom: 1px dashed #f3a00e	
+
+
+/* list-serv4 */
+
+
+
+.list-serv5
+	text-align: center
+	margin-top: 19px
+
+.list-serv5__br
+	border: .5px solid #d1d1d1
+	border-top: none
+	max-width: 820px
+	width: 100%
+
+
+.list-serv5__head
+	max-width: 820px
+	width: 100%
+	padding: 6px 25px
+	margin: 0px auto
+	background-color: #1cb1d7
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 20px
+	font-weight: 500
+
+
+
+.list-serv5__link
+	color: #202020
+	font-family: HelveticaNeueCyr-Light
+	font-size: 16px
+	font-weight: 300
+	margin-left: -33px
+	border-bottom: 1px dashed #202020
+	line-height: 48px
+	margin-left: 10px
+	text-align: left
+	&:hover
+		text-decoration: none
+		color: #f3a00e
+		border-bottom: 1px dashed #f3a00e
+
+/* The End SECTION Regular application (class="reg-app")*/
+
+
+/* footer */
+
+
+.main-foot
+	background-image: url(../img/bg_foot.png)
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	min-height: 340px
+
+
+
+
+.foot-list1
+	padding-top: 42px
+	padding-left: 70px
+	line-height: 32px
+
+.foot-list1__list, 
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	&:hover
+		text-decoration: none
+		color: #f3a00e
+
+.foot-list2
+	padding-top: 42px
+	padding-left: 70px
+	line-height: 32px
+
+
+.foot-list2__item
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 18px
+	font-weight: 500
+	&:hover
+		text-decoration: none
+		color: #f3a00e
+	
+
+/* social */
+
+
+.social
+	margin-top: 42px
+	float: right
+	margin-right: 130px
+	
+
+
+.social__head
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 14px
+	font-weight: 500
+
+.social__vk
+	background-image: url(../img/bg_vk.png)
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	padding: 15px 24px
+	margin-top: 15px
+	line-height: 70px
+
+
+
+.social__cm
+	background-image: url(../img/mk.png)
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	padding: 15px 24px
+	margin-top: 15px
+	line-height: 70px
+	margin-left: 5px
+
+
+
+.social__tw
+	background-image: url(../img/tw.png)
+	background-size: cover
+	background-position-x: center
+	background-position-y: top
+	padding: 15px 24px
+	margin-top: 15px
+	line-height: 70px
+	margin-left: 5px
+
+/* line */
+
+.main-foot__line
+	max-width: 637px
+	height: 1px
+	background-color: #31343b
+	margin: 0px auto
+	margin-top: 70px
+
+
+/* main-foot__text */
+
+
+.main-foot__text
+	margin: 0 auto
+	max-width: 450px
+	text-align: center
+	margin-top: 19px
+	line-height: 20px
+	padding: 0px 10px
+
+
+.main-foot__text-p
+	color: white
+	font-family: HelveticaNeueCyr-Medium
+	font-size: 14px
+	font-weight: 500
